@@ -1,0 +1,137 @@
+/************* GENERAL ***************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style: none;
+}
+
+/************* VARIABLES ***************/
+
+:root{
+    --section-color:#de8e37;
+    --main-bg-color:#f4f0e5;
+    --nav-font-color:#7c6950;
+    --font-color:#000000;
+    --alt-font-color:#ffffff;
+}
+
+body{
+    background-color: var(--main-bg-color);
+}
+
+/************* HEADER ***************/
+
+.top-bar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid var(--section-color);
+    width: 700px;
+    height: 260px;
+    margin: 0 auto;
+}
+
+.logo-box{
+
+    & img{
+        height: 200px;
+    }
+}
+
+.top-menu{
+    display: flex;
+    gap:15px;
+
+    & a{
+        color: var(--nav-font-color);
+        padding: 5px;
+        display: block;
+    }
+
+    & a:hover{
+        color: #7c6950;
+        font-weight: bold;
+    }
+}
+
+/************* MAIN ***************/
+
+section {
+    width: 700px;
+    margin: 0 auto;
+
+    & img{
+        width: 350px;
+    }
+}
+
+.intro {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+
+    & img {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    & h1 {
+        color: var(--font-color);
+        margin: 10px 0;
+        font-size: 20px;
+    }
+
+    & h2 {
+        color: var(--section-color);
+        font-size: 17px;
+    }
+}
+
+.main-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    background-color: var(--section-color);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px 0;
+
+    & h3{
+        margin:15px 0;
+        color: var(--alt-font-color);
+    }
+
+    & p{
+        color: var(--alt-font-color);
+        text-align: center;
+        line-height: 30px;
+    }
+}
+
+/************* FOOTER ***************/
+
+.contact{
+    margin: 0 auto;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+
+    & span{
+        font-weight: bold;
+    }
+}
